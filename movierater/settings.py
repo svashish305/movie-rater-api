@@ -56,9 +56,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
+CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
-]
+    'https://sv-movie-rater.firebaseapp.com',
+    'https://sv-movie-rater.web.app'
+)
 
 ROOT_URLCONF = 'movierater.urls'
 
